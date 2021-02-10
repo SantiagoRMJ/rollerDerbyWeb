@@ -9,7 +9,7 @@ export default function Header() {
         <header className="Header">
             <img className="Header_logo" src={logo} alt="Logo" />
             <div className="Header_title">
-                <h1>UNETE A NOSOTROS</h1>
+                <h1>ÚNETE A NOSOTROS</h1>
             </div>    
         </header>
         <NavBar/>   

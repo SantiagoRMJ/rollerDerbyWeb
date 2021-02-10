@@ -39,8 +39,8 @@
 	border-bottom-width: 1px;
 	border-top-style: solid;
 	border-bottom-style: solid;
-	border-top-color: rgba(255,255,255,0.5);
-	border-bottom-color: rgba(255,255,255,0.5);
+	border-top-color: black;
+	border-bottom-color: grey;
 	transform: scale(0.1, 1);
 }
 .NavBar_element:hover span {
@@ -59,7 +59,7 @@
 	height: 100%;
 	z-index: 1;
 	transition: all 0.3s;
-	background-color: rgba(255,255,255,0.1);
+	background-color: rgba(100, 100, 98, 0.1);
 }
 .NavBar_element:hover::after {
 	opacity: 0;	
