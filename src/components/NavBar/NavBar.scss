@@ -1,11 +1,12 @@
 .NavBar{
     width: 100%;
-    height: 3em;
+    height: 2.5em;
     display: flex;
     flex-direction: row;
-    
-    align-items: center;
-    background-color: grey;
+	align-items: center;
+    text-align: center;
+	justify-content: center;
+    background-color: rgb(27, 35, 31);
     list-style: none;
 }
 
@@ -21,6 +22,7 @@
 	color: #FFF;
 	transition: all 0.3s;
 	position: relative;
+	font-family: 'Shrikhand-Regular';
 }
 .NavBar_element span {
 	transition: all 0.3s;
@@ -49,6 +51,7 @@
 .NavBar_element:hover::before {
 	opacity: 1;	
 	transform: scale(1, 1);	
+	background-color: rgba(100, 100, 98, 0.1);
 }
 .NavBar_element::after {
 	content: '';
@@ -59,7 +62,7 @@
 	height: 100%;
 	z-index: 1;
 	transition: all 0.3s;
-	background-color: rgba(100, 100, 98, 0.1);
+	
 }
 .NavBar_element:hover::after {
 	opacity: 0;	

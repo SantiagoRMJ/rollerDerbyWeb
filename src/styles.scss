@@ -1,8 +1,12 @@
 
 
-$primary-color: green;
+$primary-color: rgb(27, 35, 31);
 
 $font-primary-color: black;
+html,body {
+  min-height: 100vh; /* needed for container min-height */
+}
+
 
 @font-face {
     font-family: 'Shrikhand-Regular';
