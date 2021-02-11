@@ -4,6 +4,7 @@ import Inicio from './components/Inicio/Inicio';
 import Header from './components/Header/Header';
 import Equipos from './components/Equipos/Equipos';
 import Contacto from './components/Contacto/Contacto';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path='/equipos' exact component={Equipos} />
         <Route path='/contacto' exact component={Contacto} />
       </Switch>
+    <Footer/>  
     </Router>
   );
 }
