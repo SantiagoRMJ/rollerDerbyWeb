@@ -6,12 +6,14 @@ import Equipos from './components/Equipos/Equipos';
 import Contacto from './components/Contacto/Contacto';
 import Footer from './components/Footer/Footer';
 import NotFound from './components/NotFound/NotFound';
+import NavBar from './components/NavBar/NavBar';
 
 
 function App() {
   return (
     <Router>
-    <Header/>
+    
+    <NavBar/>  
        <Switch>
         <Route path='/' exact component={Inicio} />
         <Route path='/equipos' exact component={Equipos} />

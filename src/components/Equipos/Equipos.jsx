@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import SectionItem from '../SectionItem/SectionItem';
-
+import '../Equipos/Equipos.scss'
 
 const Equipos = () => {
     
@@ -25,7 +25,9 @@ const Equipos = () => {
     return (
         <>
             <SectionItem webDataItem={webData[0]} key={webData.id} ></SectionItem>
+            <div className="espacio-blanco"></div>
         </>
+
     )
 }
 

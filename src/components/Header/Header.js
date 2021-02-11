@@ -10,11 +10,11 @@ export default function Header() {
         <header className="header">
             {/*<img className="Header_logo" src={logo} alt="Logo" />*/}
             <div className="header-main-image">
-            <h2>Únete a nosotros</h2>
+            {/*<div className='text-header'>Únete a nosotros</div>*/}
                 {/*<h1>ÚNETE A NOSOTROS</h1>*/}
             </div>    
         </header>
-        <NavBar/>   
+         
         </>
     )
 }

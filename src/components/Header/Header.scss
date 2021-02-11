@@ -6,9 +6,11 @@ $primary-color: rgb(27, 35, 31);
 }
 
 $font-main: 'Shrikhand-Regular', sans-serif;
-h2 {
+.text-header {
     margin-left: 30px;
     font-family: 'Shrikhand-Regular';
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
 }
 .header{
     width: 100%;
@@ -22,9 +24,9 @@ h2 {
 }
 
 .header-main-image{
-    background-image: url('../../images/cabecera2.svg');
-    height: 200px;
-    width: 500px;
+    background-image: url('../../images/cabecera-estatica3.svg');
+    height: 350px;
+    width: 1000px;
     background-repeat: no-repeat;
     display: flex;
     text-align: center;
