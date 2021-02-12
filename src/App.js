@@ -13,26 +13,28 @@ import BurgerButtons from './components/Buttons/BurgerButtons/BurgerButtons'
 function App() {
   return (
     <Router>
-    <Header/>
-    <div className="content-navbar-section">
-      <div className="content-buttons-burger"> 
-        <BurgerButtons />
-      </div> 
-      <div className="content-buttons-navbar"> 
-        <NavBar/>
-      </div>  
-      
-      <div className="content-section2">
-      <Switch>
-        <Route path='/' exact component={Inicio} />
-        <Route path='/equipos' exact component={Equipos} />
-        <Route path='/contacto' exact component={Contacto} />
-        <Route component={NotFound} />
-      </Switch>
+    <div className="container">
+      <Header/>
+      <div className="content-navbar-section">
+        <div className="content-buttons-burger"> 
+          <BurgerButtons />
+        </div> 
+        <div className="content-buttons-navbar"> 
+          <NavBar/>
+        </div>  
+        
+        <div className="content-section2">
+        <Switch>
+          <Route path='/' exact component={Inicio} />
+          <Route path='/equipos' exact component={Equipos} />
+          <Route path='/contacto' exact component={Contacto} />
+          <Route component={NotFound} />
+        </Switch>
+        </div>
+        
       </div>
-      
+      <Footer/> 
     </div>
-    <Footer/> 
     </Router>
   );
 }

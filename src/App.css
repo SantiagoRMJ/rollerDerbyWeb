@@ -104,3 +104,8 @@ body{
 @media (min-width: 1000px){
   .app-general-container{ flex-direction: row; width: 70%;}   
 }
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
