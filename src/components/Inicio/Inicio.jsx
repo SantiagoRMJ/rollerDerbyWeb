@@ -44,7 +44,7 @@ const Inicio = () => {
     
     return (
         <>
-            <Header/>
+            
             <SectionItem webDataItem={webData[0]} key={webData.id} ></SectionItem>
             <SectionItem webDataItem={webData[1]} key={webData.id}></SectionItem>
         </>

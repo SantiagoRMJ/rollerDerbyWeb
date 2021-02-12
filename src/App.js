@@ -6,21 +6,33 @@ import Equipos from './components/Equipos/Equipos';
 import Contacto from './components/Contacto/Contacto';
 import Footer from './components/Footer/Footer';
 import NotFound from './components/NotFound/NotFound';
-import NavBar from './components/NavBar/NavBar';
+import NavBar from './components/Buttons/NavBar/NavBar';
+import BurgerButtons from './components/Buttons/BurgerButtons/BurgerButtons'
 
 
 function App() {
   return (
     <Router>
-    
-    <NavBar/>  
-       <Switch>
+    <Header/>
+    <div className="content-navbar-section">
+      <div className="content-buttons-burger"> 
+        <BurgerButtons />
+      </div> 
+      <div className="content-buttons-navbar"> 
+        <NavBar/>
+      </div>  
+      
+      <div className="content-section2">
+      <Switch>
         <Route path='/' exact component={Inicio} />
         <Route path='/equipos' exact component={Equipos} />
         <Route path='/contacto' exact component={Contacto} />
         <Route component={NotFound} />
       </Switch>
-    <Footer/>  
+      </div>
+      
+    </div>
+    <Footer/> 
     </Router>
   );
 }

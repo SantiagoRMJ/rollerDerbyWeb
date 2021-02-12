@@ -1,3 +1,5 @@
+
+
 .App {
   text-align: center;
 }
@@ -38,4 +40,67 @@
 }
 body{
   min-height: 100vh;
+}
+
+.content-navbar-section{
+  display: flex;
+  flex-direction: column;
+}
+
+.content-section2{
+}
+
+.content-buttons-navbar{
+}
+
+.content-buttons-burger{
+}
+
+@media (min-width: 0px){
+  .content-navbar-section{flex-direction: row;}
+  .content-buttons-navbar{ display: none; } 
+  .content-buttons-burger{display:block; margin-left:-17em} 
+}
+
+@media (min-width: 370px){
+  .content-navbar-section{flex-direction: row;}
+  .content-buttons-navbar{ display: none; } 
+  .content-buttons-burger{display:block;} 
+}
+
+@media (min-width: 800px){
+  .content-navbar-section{flex-direction: column;} 
+  .content-buttons-navbar{ display:block } 
+  .content-buttons-burger{display: none; } 
+}
+
+@media (min-width: 1000px){
+  .content-navbar-section{flex-direction: column;}
+  .content-buttons-navbar{ display:block } 
+  .content-buttons-burger{display: none; } 
+}
+
+.content-section{
+  position: absolute;
+}
+
+.app-general-container{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+
+@media (min-width: 300px){
+  .app-general-container{ flex-direction: column;}
+}
+
+@media (min-width: 800px){
+  .app-general-container{ flex-direction: row; width: 100%;}   
+}
+
+@media (min-width: 1000px){
+  .app-general-container{ flex-direction: row; width: 70%;}   
 }
